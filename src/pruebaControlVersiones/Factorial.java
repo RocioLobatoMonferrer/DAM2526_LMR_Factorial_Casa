@@ -6,6 +6,12 @@ public class Factorial {
 
 	private static Scanner sc = new Scanner(System.in);
 
+	/**
+	 * Calcula el factorial de un número utilizando un enfoque recursivo.
+	 *
+	 * @param n Número entero del que se quiere obtener el factorial.
+	 * @return Factorial de n, calculado mediante recursividad.
+	 */
 	private static long factorialRec(int n) {
 		if (n == 0 || n == 1) {
 			return 1;
