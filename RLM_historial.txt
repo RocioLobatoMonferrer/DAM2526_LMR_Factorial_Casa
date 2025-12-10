@@ -1,0 +1,74 @@
+    1  history -w
+    2  history -w
+    3  git init 
+    4  eval "$(ssh-agent -s)"
+    5  ssh-add ~/.ssh/id_ed25519
+    6  ssh-add -l
+    7  git add origin git@github.com:RocioLobatoMonferrer/DAM2526_LMR_Factorial_Casa.git
+    8  git remote add origin git@github.com:RocioLobatoMonferrer/DAM2526_LMR_Factorial_Casa.git 
+    9  git remote -v
+   10  git add .
+   11  git commit -m "Primera Versión que pide números y lo comprueba"
+   12  git push origin main
+   13  git add .
+   14  git commit -m "Segunda Versión con función pedirNumero y Scanner privado"
+   15  git push 
+   16  git push origin main
+   17  git add .
+   18  git commit -m "Tercera Versión nueva línea que se espera a futuros cambios"
+   19  git push origin main
+   20  git add .
+   21  git commit -m "Versión Extra bin borrado"
+   22  git push origin main
+   23  nano .gitignore
+   24  git add .
+   25  git commit -m "Versión Extra gitignore añadido"
+   26  git push origin main
+   27  git switch -c factorial_recursivo
+   28  git add .
+   29  git commit -m "Rama 1 Primera Versión función recursiva"
+   30  git add .
+   31  git commit -m "Rama 1 Versión Dos Nueva línea de resultado factorial recursivo"
+   32  git add .
+   33  git commit -m "Rama 1 Versión Tres Explicación función recursiva"
+   34  git log --all --graph --oneline
+   35  git switch main
+   36  git add .
+   37  git commit -m "Versión 4 cambio a la función pedirNumero"
+   38  git push origin main
+   39  git add .
+   40  git commit -m "Versión 5 falta hacer función factorialBucle"
+   41  git push origin main 
+   42  git add .
+   43  git commit -m "Versión 6 modificado línea de resultado con la función recursiva"
+   44  git push origin main 
+   45  git log --all --graph --oneline
+   46  git switch factorial_recursivo 
+   47  git rebase main 
+   48  git status
+   49  git add . 
+   50  git rebase --continue 
+   51  git log --all --graph --oneline
+   52  git push origin factorial_recursivo 
+   53  git add .
+   54  git commit -m "Rama 1 Version 4 Nueva Línea indicando el fin del programa"
+   55  git push origin factorial_recursivo 
+   56  git add .
+   57  git commit -m "Rama 1 Version 4 Nueva Línea indicando el fin del programa"
+   58  git push origin factorial_recursivo 
+   59  git switch main 
+   60  git merge factorial_recursivo 
+   61  git status 
+   62  git add . 
+   63  git commit "Version 7 Merge de main y factorial_recursivo"
+   64  git commit -m "Version 7 Merge de main y factorial_recursivo"
+   65  git push origin main 
+   66  git log --all --graph --oneline
+   67  git revert 60e9213
+   68  git push origin main 
+   69  git log 
+   70  git log --all --graph --oneline
+   71  git add .
+   72  git commit -m "Subida de 2 imágenes en img"
+   73  git push origin main 
+   74  history > RLM_historial.txt 
